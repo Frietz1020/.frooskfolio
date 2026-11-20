@@ -6,4 +6,10 @@ export type Project = Placeholder & {
   title: string; year: string; image: string; features: [string, string, string];
   description: string; actions: ProjectAction[];
 };
+export type CaseStudyImage = { src: string; alt: string; caption: string };
+export type CaseStudySection = { id: string; title: string; paragraphs: string[]; image?: CaseStudyImage };
+export type CaseStudy = {
+  slug: string; projectId: string; title: string; year: string; description: string;
+  role: string; stack: string[]; links: ProjectAction[]; sections: CaseStudySection[];
+};
 export type Certificate = Placeholder & { title: string; issuer: string; year: string; pdf: string };
