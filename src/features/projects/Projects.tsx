@@ -25,7 +25,7 @@ export function Projects() {
             <p className="text-body-md text-on-surface-variant mb-space-lg flex-1">{p.description}</p>
             <div className="flex flex-wrap items-center gap-space-sm pt-space-xs border-t border-surface-container">
               {p.actions.map((a) => (
-                <Button key={a.label} href={a.href} variant={a.label === "View Project" ? "primary" : "neutral"} aria-label={`${a.label}: ${p.title}`}>{a.label}</Button>
+                <Button key={a.label} href={a.href} variant={a.label === "View Case Study" ? "primary" : "neutral"} aria-label={`${a.label}: ${p.title}`}>{a.label}</Button>
               ))}
             </div>
           </article>
