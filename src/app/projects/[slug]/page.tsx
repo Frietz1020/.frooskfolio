@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { caseStudies, getCaseStudy } from "@/content/case-studies";
 import { Header } from "@/features/header/Header";
 import { CaseStudyPage } from "@/features/case-studies/CaseStudyPage";
+import { SiteFooter } from "@/features/footer/SiteFooter";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -40,12 +41,7 @@ export default async function ProjectCaseStudyRoute({ params }: PageProps) {
     <>
       <Header />
       <CaseStudyPage study={study} />
-      <footer className="w-full border-t border-surface-container bg-surface-container-low py-space-lg">
-        <div className="mx-auto flex max-w-[1280px] items-center justify-between px-margin-mobile text-sm text-on-surface-variant lg:px-margin">
-          <span className="font-medium text-on-surface">{site.name}</span>
-          <span className="font-medium tabular-nums text-on-surface">{new Date().getFullYear()}</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
