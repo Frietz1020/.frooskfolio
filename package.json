@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "next build",
     "lint": "eslint",
     "vendor-icons": "node scripts/vendor-icons.mjs",
     "prebuild:prod": "node --import tsx scripts/check-placeholders.mjs",
