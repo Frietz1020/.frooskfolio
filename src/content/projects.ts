@@ -1,21 +1,27 @@
 import type { Project } from "./schema";
 
-const img = "/images/placeholder-project.svg";
+const summifyImage = "/images/summify.png";
+const seminexImage = "/images/seminex.png";
+const summifyLogo = "/images/summify-logo.png";
+const seminexLogo = "/images/seminex-logo.png";
 export const projects: Project[] = [
   {
-    title: "Portfolio Website", year: "2024", image: img,
-    features: ["Next.js App Router", "Tailwind CSS v4", "Accessible & responsive"],
-    description: "This portfolio — built with Next.js 16, Tailwind CSS v4, and React 19. Statically exported, keyboard-navigable, and optimised for performance from day one.",
+    id: "summify", title: "Summify", year: "2026", image: summifyImage, logo: summifyLogo,
+    features: ["AI document summaries", "PDF, DOCX & TXT upload", "Interactive knowledge graph"],
+    description: "A mobile-first AI document summarizer that turns uploaded or pasted text into concise, detailed, and bullet summaries, then maps key concepts in an interactive graph.",
     actions: [
-      { label: "Visit Repo", href: "https://github.com/Frietz1020" },
+      { label: "View Case Study", href: "/projects/summify/" },
+      { label: "View Project", href: "https://summify-pearl.vercel.app" },
+      { label: "Visit Repo", href: "https://github.com/Frietz1020/summify" },
     ],
   },
   {
-    title: "Full-Stack Web Application", year: "2024", image: img,
-    features: ["React frontend", "FastAPI backend", "PostgreSQL database"],
-    description: "A full-stack web application combining a React frontend with a FastAPI backend and PostgreSQL database. Features user authentication, data visualisation, and a REST API.",
+    id: "seminex", title: "Seminex", year: "2026", image: seminexImage, logo: seminexLogo,
+    features: ["Student, organization & adviser portals", "Seminar registration & QR attendance", "Evaluations & certificates"],
+    description: "A seminar management platform for CCS Gordon College. Students discover and register for seminars, track attendance through QR scanning, complete evaluations, and access eligible certificates; organizations manage events while advisers review membership requests.",
     actions: [
-      { label: "Visit Repo", href: "https://github.com/Frietz1020" },
+      { label: "View Case Study", href: "/projects/seminex/" },
+      { label: "Visit Repo", href: "https://github.com/Frietz1020/seminex" },
     ],
   },
 ];

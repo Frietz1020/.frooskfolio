@@ -44,6 +44,8 @@ export const caseStudies: CaseStudy[] = [
         ],
         image: {
           src: "/images/summify.png",
+          width: 1565,
+          height: 986,
           alt: "Summify's Graph view showing a central volleyball concept connected to related terms.",
           caption: "The Graph view connects extracted terms from a document.",
         },
@@ -113,6 +115,8 @@ export const caseStudies: CaseStudy[] = [
         ],
         image: {
           src: "/images/seminex.png",
+          width: 1635,
+          height: 1007,
           alt: "Seminex's landing page with separate entry cards for participants, organizations, and administrators.",
           caption: "The landing page distinguishes the three portal audiences.",
         },

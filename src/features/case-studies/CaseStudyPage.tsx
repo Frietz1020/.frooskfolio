@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import type { CaseStudy } from "@/content/schema";
-import meta from "@/content/image-meta.json";
 
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
   return (
@@ -97,8 +96,8 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
                   <Image
                     src={section.image.src}
                     alt={section.image.alt}
-                    width={meta.project.width}
-                    height={meta.project.height}
+                    width={section.image.width}
+                    height={section.image.height}
                     sizes="(max-width: 48rem) 100vw, 64rem"
                     loading="lazy"
                     className="block h-auto w-full"

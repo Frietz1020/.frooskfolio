@@ -35,6 +35,8 @@
 .animate-shake{animation:shake 360ms ease-in-out}
 @keyframes pulse-once{0%{transform:scale(.96);opacity:.6}50%{transform:scale(1.02);opacity:1}100%{transform:scale(1);opacity:1}}
 .animate-pulse-once{animation:pulse-once .4s ease-out 1 forwards}
+.project-card-target:target{outline:2px solid var(--color-secondary);outline-offset:3px;animation:project-target-highlight 1.2s ease-out both}
+@keyframes project-target-highlight{0%{box-shadow:0 0 0 6px rgb(165 59 22 / .2)}100%{box-shadow:0 1px 3px 0 rgb(0 0 0 / .03),0 6px 18px -2px rgb(0 0 0 / .05)}}
 .viewer{width:min(64rem,calc(100vw - 2rem));height:min(88svh,54rem);max-width:none;max-height:calc(100svh - 2rem);margin:auto;padding:0;border:1px solid #c5c6ca;border-radius:.75rem;background:#fbf9f4;color:#1b1c19;overflow:hidden;opacity:0;transform:scale(.98);transition:opacity 160ms ease-out,transform 160ms ease-out,display 160ms allow-discrete,overlay 160ms allow-discrete}
 .viewer[open]{display:flex;flex-direction:column;opacity:1;transform:scale(1);transition-duration:200ms}
 .viewer::backdrop{background:rgb(27 28 25 / .68)}
@@ -43,4 +45,4 @@
 @starting-style{.viewer[open]{opacity:0;transform:scale(.98)}}
 ::selection{background:#ffdbd0;color:#3a0b00}
 @media (max-width:40rem){.viewer{width:calc(100vw - 1rem);height:calc(100svh - 1rem);max-height:calc(100svh - 1rem);border-radius:.5rem}.viewer__header{min-height:4rem;padding:.5rem .75rem}}
-@media (prefers-reduced-motion:reduce){.btn-tap:active{transform:none}.animate-shake,.animate-pulse-once{animation:none}.viewer{transition:none}}
+@media (prefers-reduced-motion:reduce){.btn-tap:active{transform:none}.animate-shake,.animate-pulse-once,.project-card-target:target{animation:none}.viewer{transition:none}}

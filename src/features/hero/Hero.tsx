@@ -21,8 +21,8 @@ export function Hero() {
               <span className="text-sm font-medium text-on-surface-variant shrink-0">Selected work</span>
               <div className="flex items-center gap-3">
                 {projects.map((p) => (
-                  <a key={p.title} href="#projects" title={p.title} className="group/thumb relative block w-24 h-16 rounded-lg overflow-hidden bg-surface-container border border-surface-container-high shadow-sm hover:border-secondary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
-                    <Image src={p.image} alt={`Thumbnail preview of ${p.title}`} width={meta.project.width} height={meta.project.height} loading="lazy" className="w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-200" />
+                  <a key={p.id} href={`#project-${p.id}`} aria-label={`Jump to ${p.title} project`} title={p.title} className="group/logo relative flex size-16 sm:size-[4.5rem] items-center justify-center rounded-lg bg-surface-container-lowest border border-surface-container-high shadow-sm transition-[border-color,background-color,box-shadow] duration-200 hover:border-secondary hover:bg-secondary-fixed/40 active:scale-[.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary motion-reduce:transition-none">
+                    <Image src={p.logo} alt="" aria-hidden="true" width={160} height={160} loading="lazy" className="size-10 object-contain transition-transform duration-200 ease-out group-hover/logo:scale-110 group-hover/logo:-rotate-3 group-focus-visible/logo:scale-110 group-focus-visible/logo:-rotate-3 motion-reduce:transition-none" />
                   </a>
                 ))}
               </div>

@@ -11,7 +11,7 @@ export function Projects() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
         {projects.map((p) => (
-          <article key={p.title} className="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(0,0,0,0.03),0_6px_18px_-2px_rgba(0,0,0,0.05)] flex flex-col overflow-hidden">
+          <article id={`project-${p.id}`} key={p.id} className="project-card-target scroll-mt-24 bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_1px_3px_0_rgba(0,0,0,0.03),0_6px_18px_-2px_rgba(0,0,0,0.05)] flex flex-col overflow-hidden">
             <div className="flex items-center justify-between mb-space-md">
               <h3 className="font-headline-sm text-headline-sm text-on-surface">{p.title}</h3>
               <span className="text-sm font-headline-sm text-on-surface-variant tabular-nums">{p.year}</span>
