@@ -79,7 +79,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Seminex",
     year: "2026",
     description: "A seminar-management platform for participants, student organizations, and faculty at CCS Gordon College.",
-    role: "Team project; I contributed across most of the work and led the initial frontend implementation.",
+    role: "Project Manager, Lead Developer",
     stack: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vite"],
     links: [
       { label: "Visit Repo", href: "https://github.com/Frietz1020/seminex" },
@@ -96,7 +96,7 @@ export const caseStudies: CaseStudy[] = [
         id: "users",
         title: "Who it is for",
         paragraphs: [
-          "Participants browse seminars, register, access their tickets, check attendance, and complete evaluations. Organization officers manage seminars and participant workflows. Advisers and faculty use the administration area to oversee organization activity.",
+          "CCS Student (Applicants) discover seminars, register, access tickets, check attendance, and complete evaluations. CCS Student Council (Organization) manages seminars and participant workflows. CCS Student Council Advisers (Admin) oversee organization activity.",
         ],
       },
       {
